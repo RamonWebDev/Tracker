@@ -9,7 +9,7 @@ if(isset($_POST['submit'])) {
         $password = $_POST['password'];
 
         //creating the salt
-        $salt = hash('256', uniqid(mt_rand(), true) . 'ek2lszn456i0qtkgha' . strtolower($username));
+        $salt = hash('sha256', uniqid(mt_rand(), true) . 'ek2lszn456i0qtkgha' . strtolower($username));
         
         //add hash to password
         $hash = $salt . $password;
