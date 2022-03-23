@@ -1,5 +1,5 @@
 <?php
-$dbhost = "localhost";
+$dbhost = "localhost"; 
 $dbuser = "ramonm_tracker";
 $dbpassword = "n1oyf-09RH*}";
 $dbdatabase = "ramonm_expenseTracker";

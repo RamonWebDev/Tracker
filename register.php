@@ -26,6 +26,13 @@ if(isset($_POST['submit'])) {
         }//end if
     }//end if
 }//end if post submit
+
+if(isset($_SESSION['USERNAME'])){
+    require('header.php');
+    echo "Welcome, " . $_SESSION['USERNAME'] . ", you are logged into our system.";
+}else{
+    require('header.php');
+}
 ?>
 
 <form action="<?php echo $file;?>" method='post' id='otherlogin'>
@@ -35,6 +42,8 @@ if(isset($_POST['submit'])) {
 
     <label for="password">Passowrd</label>
     <input type="text" id="password" name="password" placeholder="password" require="">
+
+    <input type="submit" id="submit" name="submit" value="Register">
 
 
 
