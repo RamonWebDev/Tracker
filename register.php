@@ -4,7 +4,7 @@ session_start();
 require("cfd.php");
 
 if(isset($_POST['submit'])) {
-    if($_POST['password'] == $_POST['password']){
+    if($_POST['password'] == $_POST['vpassword']){
         $username = $_POST['username'];
         $password = $_POST['password'];
 
@@ -42,6 +42,9 @@ if(isset($_SESSION['USERNAME'])){
 
     <label for="password">Password</label>
     <input type="text" id="password" name="password" placeholder="password" require="">
+
+    <label for="password">Verify Password</label>
+    <input type="text" id="password" name="vpassword" placeholder="password" require="">
 
     <input type="submit" id="submit" name="submit" value="Register">
 
