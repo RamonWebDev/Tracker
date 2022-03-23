@@ -40,7 +40,7 @@ if(isset($_SESSION['USERNAME'])){
     <label for="username">Username</label>
     <input type="text" id="username" name="username" placeholder="username" require="">
 
-    <label for="password">Passowrd</label>
+    <label for="password">Password</label>
     <input type="text" id="password" name="password" placeholder="password" require="">
 
     <input type="submit" id="submit" name="submit" value="Register">
