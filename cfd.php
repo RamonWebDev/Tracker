@@ -1,8 +1,8 @@
 <?php
-$dbhost = "localhost"; 
-$dbuser = "ramonm_tracker";
-$dbpassword = "n1oyf-09RH*}";
-$dbdatabase = "ramonm_expenseTracker";
+$dbhost = "localhost"; //changed to protect database info
+$dbuser = "";
+$dbpassword = "";
+$dbdatabase = "";
 
 try{
     $db = new PDO("mysql:host={$dbhost};dbname={$dbdatabase}", $dbuser, $dbpassword);
