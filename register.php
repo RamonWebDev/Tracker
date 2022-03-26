@@ -8,8 +8,8 @@ if(isset($_SESSION['user'])){
 }//end if
 
 if(isset($_REQUEST['register_btn'])){//checks if form has been filled
-    $username = filter_var($_REQUEST['username'], FILTER_SANITIZE_STRING); //sanatizes user info
-    $email = filter_var($_REQUEST['email'], FILTER_SANITIZE_EMAIL);
+    $username = filter_var(strtolower($_REQUEST['username']), FILTER_SANITIZE_STRING); //sanatizes user info
+    $email = filter_var(strtolower($_REQUEST['email']), FILTER_SANITIZE_EMAIL);
     $password = strip_tags($_REQUEST['password']);
 
     if(empty($username)){//checks if it's empty
