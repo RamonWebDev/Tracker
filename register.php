@@ -1,7 +1,7 @@
 <?php 
-session_name('tracker');
 session_start();
 require("cfd.php");
+require_once 'header.php';
 
 if(isset($_SESSION['user'])){
     header("location: index.php");
